@@ -12,7 +12,7 @@ from select_agol import Recommend
 # In this case, we're adding the elements through a callback, so we can ignore
 # the exception.
 app = dash.Dash(__name__, suppress_callback_exceptions=True, external_stylesheets=[dbc.themes.GRID])
-server = app.server
+
 app.layout = html.Div([
     dcc.Location(id='url', refresh=False),
     dcc.Store(id = 'webtoon-memo', storage_type='session'),
@@ -27,7 +27,7 @@ index_page = html.Div([
 
 ])
 
-totoal = pd.read_csv('nlp+image.csv')
+totoal = pd.read_csv('output.csv')
 totoal.drop_duplicates('name', inplace=True)
 temp = totoal.iloc[:,:2]
 temp['label'] = temp.name
@@ -37,30 +37,34 @@ web_toon_options = temp.to_dict('records')
 
 main_page = html.Div([
 
-    dbc.Row(dbc.Col(html.H1(children='네이버 웹툰 추천'),style={'text-align':'center'})),
-    html.Br(),
-    html.Br(),
+    dbc.Row(dbc.Col(html.H1(children='네이버 웹툰 추천'),style={'text-align':'center','background-color':'rgba(67, 216, 171, 0.466)'},)),
     dbc.Row(
         [
+            dbc.Col(html.Div()),
             dbc.Col(html.Div(children='웹툰을 선택하세요'),style={'text-align':'center'}),
-        ]
+            dbc.Col(html.Div()),
+        ],style = {'background-color':'rgba(113, 230, 97, 0.445)'}
     ),
            dbc.Row(
         [
-            
+            dbc.Col(html.Div()),
             dbc.Col(
                 dcc.Dropdown(id = 'webtoon', options=web_toon_options
                 ,multi = True,),
-                )
-        ]
+                ),
+            dbc.Col(html.Div()),
+            
+        ],style = {'background-color':'rgba(113, 230, 97, 0.445)'}
     ),
     dbc.Row(
         [
             dbc.Col(html.Div(children='장르를 선택하세요'),style={'text-align':'center'}),
-        ]
+        ],
+        style = {'background-color': '#eca46080'}
     ),
        dbc.Row(
         [
+            dbc.Col(html.Div()),
             dbc.Col(
                 dcc.Dropdown(id = 'genre', options=[
                 {'label': '감성', 'value': '감성'},
@@ -75,12 +79,13 @@ main_page = html.Div([
                 {'label': '판타지', 'value': '판타지'},
                 {'label': '무관', 'value' : '무관'},
                 ],
-                value='감성',multi = True,),
-                )
-        ]
+                value='무관',multi = True,),
+                ),
+            dbc.Col(html.Div()),
+        ],style = {'background-color': '#eca46080',}
     ),
     html.Br(),
-    dcc.Link('추천', href='/recommend?value=webtoon'),
+    dcc.Link('추천', href='/recommend'),
     html.Br(),
 ])
 
@@ -111,7 +116,7 @@ page_recommend_layout = html.Div([
         html.Div(id='genre-content'),
     ),
     dbc.Row(
-        html.H1('희문 추천시스템'),
+        html.Div('희문 추천시스템'),
     ),
     html.Br(),
     dbc.Row([
@@ -285,4 +290,4 @@ def display_page(pathname):
 
 
 if __name__ == '__main__':
-    app.run_server()
+    app.run_server(debug=True)
