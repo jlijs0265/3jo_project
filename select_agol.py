@@ -9,6 +9,7 @@ class Recommend:
         self.input_genre = webtoon_genre[0]
 
     # 입력값이 1개일때 가정.
+    # 입력값이 여러개라면..
 
     # 일치하는 군집 찾기
     def find_cluster(self): 
