@@ -12,6 +12,7 @@ from select_agol import Recommend
 # In this case, we're adding the elements through a callback, so we can ignore
 # the exception.
 app = dash.Dash(__name__, suppress_callback_exceptions=True, external_stylesheets=[dbc.themes.GRID])
+server = app.server
 
 app.layout = html.Div([
     dcc.Location(id='url', refresh=False),
