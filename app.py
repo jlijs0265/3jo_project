@@ -67,16 +67,6 @@ main_page = html.Div([
             dbc.Col(html.Div()),
             dbc.Col(
                 dcc.Dropdown(id = 'genre', options=[
-                {'label': '감성', 'value': '감성'},
-                {'label': '개그', 'value': '개그'},
-                {'label': '드라마', 'value': '드라마'},
-                {'label': '로맨스', 'value': '로맨스'},
-                {'label': '스릴러', 'value': '스릴러'},
-                {'label': '스포츠', 'value': '스포츠'},
-                {'label': '시대극', 'value': '시대극'},
-                {'label': '액션', 'value': '액션'},
-                {'label': '일상', 'value': '일상'},
-                {'label': '판타지', 'value': '판타지'},
                 {'label': '무관', 'value' : '무관'},
                 ],
                 value=['무관'],multi = True,),
@@ -116,7 +106,7 @@ page_recommend_layout = html.Div([
     #     html.Div(id='genre-content'),
     # ),
     dbc.Row(
-        dbc.Col(html.Div('희문 추천시스템',style={'text-align':'center'})),
+        dbc.Col(html.Div('메인추천',style={'text-align':'center','background-color': '#d9ffb3'})),
     ),
     html.Br(),
     dbc.Row([
@@ -126,7 +116,7 @@ page_recommend_layout = html.Div([
                 dbc.CardImg(id= 'Webtoon-img-1',src='', top=True, style={'width': '20rem','height':'12rem','display':'block','margin-left':'auto','margin-right':'auto'}),
                 dbc.CardBody(
                     [
-                        html.H4("", className="card-title",id = 'Webtoon-name-1',style = {'background-color': '#595959'}),
+                        html.H4("", className="card-title",id = 'Webtoon-name-1',style = {'background-color': '#59b300'}),
                         html.P([
                             "", ],
                             className="card-text", id = 'Webtoon-context-1'
@@ -134,7 +124,7 @@ page_recommend_layout = html.Div([
                         dcc.Link('해당웹툰 보러가기', href='', id = 'Webtoon-link-1'),
                     ],style={'text-align':'center',}
                 ),
-            ],style = {'background-color': '#737373','border-style':'solid','border-color':'#ffffff','width':'22rem','color':'#ffffff'}
+            ],style = {'background-color': '#ccff99','border-style':'solid','border-color':'#ffffff','width':'22rem'}
             ),
         ),
         dbc.Col(
@@ -143,7 +133,7 @@ page_recommend_layout = html.Div([
                 dbc.CardImg(id= 'Webtoon-img-2',src='', top=True, style={'width': '20rem','height':'12rem','display':'block','margin-left':'auto','margin-right':'auto'}),
                 dbc.CardBody(
                     [
-                        html.H4("", className="card-title",id = 'Webtoon-name-2',style = {'background-color': '#595959'}),
+                        html.H4("", className="card-title",id = 'Webtoon-name-2',style = {'background-color': '#59b300'}),
                         html.P([
                             "", ],
                             className="card-text", id = 'Webtoon-context-2'
@@ -151,7 +141,7 @@ page_recommend_layout = html.Div([
                         dcc.Link('해당웹툰 보러가기', href='', id = 'Webtoon-link-2'),
                     ],style={'text-align':'center'}
                 ),
-            ],style = {'background-color': '#737373','border-style':'solid','border-color':'#ffffff','width':'22rem'}
+            ],style = {'background-color': '#ccff99','border-style':'solid','border-color':'#ffffff','width':'22rem'}
             ),
         ),
         dbc.Col(
@@ -160,7 +150,7 @@ page_recommend_layout = html.Div([
                 dbc.CardImg(id= 'Webtoon-img-3', src='', top=True, style={'width': '20rem','height':'12rem','display':'block','margin-left':'auto','margin-right':'auto'}),
                 dbc.CardBody(
                     [
-                        html.H4("", className="card-title",id = 'Webtoon-name-3',style = {'background-color': '#5c85d6'}),
+                        html.H4("", className="card-title",id = 'Webtoon-name-3',style = {'background-color': '#59b300'}),
                         html.P([
                             "", ],
                             className="card-text", id = 'Webtoon-context-3'
@@ -168,7 +158,7 @@ page_recommend_layout = html.Div([
                         dcc.Link('해당웹툰 보러가기', href='', id = 'Webtoon-link-3'),
                     ],style={'text-align':'center'}
                 ),
-            ],style = {'background-color': '#c2d1f0','border-style':'solid','border-color':'#ffffff','width':'22rem'}
+            ],style = {'background-color': '#ccff99','border-style':'solid','border-color':'#ffffff','width':'22rem'}
             ),
         ),
         dbc.Col(
@@ -188,13 +178,21 @@ page_recommend_layout = html.Div([
             ],style = {'background-color': '#ccff99','border-style':'solid','border-color':'#ffffff','width':'22rem'}
             ),
         ),
+        
+         ]),
+    html.Br(),
+    dbc.Row(
+        dbc.Col(html.Div('이미지 기반 추천',style={'text-align':'center','background-color': '#d9ffb3'})),
+    ),
+    html.Br(),
+    dbc.Row([
         dbc.Col(
             dbc.Card(
             [
                 dbc.CardImg(id= 'Webtoon-img-5', src='', top=True, style={'width': '20rem','height':'12rem','display':'block','margin-left':'auto','margin-right':'auto'}),
                 dbc.CardBody(
                     [
-                        html.H4("", className="card-title",id = 'Webtoon-name-5'),
+                        html.H4("", className="card-title",id = 'Webtoon-name-5',style = {'background-color': '#59b300'}),
                         html.P([
                             "", ],
                             className="card-text", id = 'Webtoon-context-5'
@@ -202,11 +200,136 @@ page_recommend_layout = html.Div([
                         dcc.Link('해당웹툰 보러가기', href='', id = 'Webtoon-link-5'),
                     ],style={'text-align':'center'}
                 ),
-            ],
+            ],style = {'background-color': '#ccff99','border-style':'solid','border-color':'#ffffff','width':'22rem'}
             ),
         ),
-         ]),
+        dbc.Col(
+            dbc.Card(
+            [
+                dbc.CardImg(id= 'Webtoon-img-6',src='', top=True, style={'width': '20rem','height':'12rem','display':'block','margin-left':'auto','margin-right':'auto'}),
+                dbc.CardBody(
+                    [
+                        html.H4("", className="card-title",id = 'Webtoon-name-6',style = {'background-color': '#59b300'}),
+                        html.P([
+                            "", ],
+                            className="card-text", id = 'Webtoon-context-6'
+                        ),
+                        dcc.Link('해당웹툰 보러가기', href='', id = 'Webtoon-link-6'),
+                    ],style={'text-align':'center',}
+                ),
+            ],style = {'background-color': '#ccff99','border-style':'solid','border-color':'#ffffff','width':'22rem'}
+            ),
+        ),
+        dbc.Col(
+            dbc.Card(
+            [
+                dbc.CardImg(id= 'Webtoon-img-7',src='', top=True, style={'width': '20rem','height':'12rem','display':'block','margin-left':'auto','margin-right':'auto'}),
+                dbc.CardBody(
+                    [
+                        html.H4("", className="card-title",id = 'Webtoon-name-7',style = {'background-color': '#59b300'}),
+                        html.P([
+                            "", ],
+                            className="card-text", id = 'Webtoon-context-7'
+                        ),
+                        dcc.Link('해당웹툰 보러가기', href='', id = 'Webtoon-link-7'),
+                    ],style={'text-align':'center'}
+                ),
+            ],style = {'background-color': '#ccff99','border-style':'solid','border-color':'#ffffff','width':'22rem'}
+            ),
+        ),
+        dbc.Col(
+            dbc.Card(
+            [
+                dbc.CardImg(id= 'Webtoon-img-8',src='', top=True, style={'width': '20rem','height':'12rem','display':'block','margin-left':'auto','margin-right':'auto'}),
+                dbc.CardBody(
+                    [
+                        html.H4("", className="card-title",id = 'Webtoon-name-8',style = {'background-color': '#59b300'}),
+                        html.P([
+                            "", ],
+                            className="card-text", id = 'Webtoon-context-8'
+                        ),
+                        dcc.Link('해당웹툰 보러가기', href='', id = 'Webtoon-link-8'),
+                    ],style={'text-align':'center',}
+                ),
+            ],style = {'background-color': '#ccff99','border-style':'solid','border-color':'#ffffff','width':'22rem'}
+            ),
+        ),
+    ]),
     html.Br(),
+    dbc.Row(
+        dbc.Col(html.Div('댓글 기반 추천',style={'text-align':'center','background-color': '#d9ffb3'})),
+    ),
+    html.Br(),
+    dbc.Row([
+        dbc.Col(
+            dbc.Card(
+            [
+                dbc.CardImg(id= 'Webtoon-img-9',src='', top=True, style={'width': '20rem','height':'12rem','display':'block','margin-left':'auto','margin-right':'auto'}),
+                dbc.CardBody(
+                    [
+                        html.H4("", className="card-title",id = 'Webtoon-name-9',style = {'background-color': '#59b300'}),
+                        html.P([
+                            "", ],
+                            className="card-text", id = 'Webtoon-context-9'
+                        ),
+                        dcc.Link('해당웹툰 보러가기', href='', id = 'Webtoon-link-9'),
+                    ],style={'text-align':'center',}
+                ),
+            ],style = {'background-color': '#ccff99','border-style':'solid','border-color':'#ffffff','width':'22rem'}
+            ),
+        ),
+         dbc.Col(
+            dbc.Card(
+            [
+                dbc.CardImg(id= 'Webtoon-img-10',src='', top=True, style={'width': '20rem','height':'12rem','display':'block','margin-left':'auto','margin-right':'auto'}),
+                dbc.CardBody(
+                    [
+                        html.H4("", className="card-title",id = 'Webtoon-name-10',style = {'background-color': '#59b300'}),
+                        html.P([
+                            "", ],
+                            className="card-text", id = 'Webtoon-context-10'
+                        ),
+                        dcc.Link('해당웹툰 보러가기', href='', id = 'Webtoon-link-10'),
+                    ],style={'text-align':'center',}
+                ),
+            ],style = {'background-color': '#ccff99','border-style':'solid','border-color':'#ffffff','width':'22rem'}
+            ),
+        ),
+        dbc.Col(
+            dbc.Card(
+            [
+                dbc.CardImg(id= 'Webtoon-img-11',src='', top=True, style={'width': '20rem','height':'12rem','display':'block','margin-left':'auto','margin-right':'auto'}),
+                dbc.CardBody(
+                    [
+                        html.H4("", className="card-title",id = 'Webtoon-name-11',style = {'background-color': '#59b300'}),
+                        html.P([
+                            "", ],
+                            className="card-text", id = 'Webtoon-context-11'
+                        ),
+                        dcc.Link('해당웹툰 보러가기', href='', id = 'Webtoon-link-11'),
+                    ],style={'text-align':'center',}
+                ),
+            ],style = {'background-color': '#ccff99','border-style':'solid','border-color':'#ffffff','width':'22rem'}
+            ),
+        ),
+        dbc.Col(
+            dbc.Card(
+            [
+                dbc.CardImg(id= 'Webtoon-img-12',src='', top=True, style={'width': '20rem','height':'12rem','display':'block','margin-left':'auto','margin-right':'auto'}),
+                dbc.CardBody(
+                    [
+                        html.H4("", className="card-title",id = 'Webtoon-name-12',style = {'background-color': '#59b300'}),
+                        html.P([
+                            "", ],
+                            className="card-text", id = 'Webtoon-context-12'
+                        ),
+                        dcc.Link('해당웹툰 보러가기', href='', id = 'Webtoon-link-12'),
+                    ],style={'text-align':'center',}
+                ),
+            ],style = {'background-color': '#ccff99','border-style':'solid','border-color':'#ffffff','width':'22rem'}
+            ),
+        ),
+    ]),
     dcc.Link('메인 페이지', href='/main'),
 ])
 
@@ -273,7 +396,84 @@ def webtoon_name_test(webtoon_name, genre):
               dash.dependencies.Input('genre-memo', 'data')])
 def webtoon_name_test(webtoon_name, genre):
     model = Recommend(webtoon_name, genre)
-    name = model.select(model.find_cluster()[0],model.find_cluster()[1])[5]
+    name = model.select_iic()[0]
+    return name, model.find_thumb(name), model.find_summary(name), model.find_link(name)
+
+@app.callback([dash.dependencies.Output('Webtoon-name-6', 'children'),
+                dash.dependencies.Output('Webtoon-img-6', 'src'),
+                dash.dependencies.Output('Webtoon-context-6', 'children'),
+                dash.dependencies.Output('Webtoon-link-6', 'href'),],
+              [dash.dependencies.Input('webtoon-memo', 'data'),
+              dash.dependencies.Input('genre-memo', 'data')])
+def webtoon_name_test(webtoon_name, genre):
+    model = Recommend(webtoon_name, genre)
+    name = model.select_iic()[1]
+    return name, model.find_thumb(name), model.find_summary(name), model.find_link(name)
+
+@app.callback([dash.dependencies.Output('Webtoon-name-7', 'children'),
+                dash.dependencies.Output('Webtoon-img-7', 'src'),
+                dash.dependencies.Output('Webtoon-context-7', 'children'),
+                dash.dependencies.Output('Webtoon-link-7', 'href'),],
+              [dash.dependencies.Input('webtoon-memo', 'data'),
+              dash.dependencies.Input('genre-memo', 'data')])
+def webtoon_name_test(webtoon_name, genre):
+    model = Recommend(webtoon_name, genre)
+    name = model.select_iic()[2]
+    return name, model.find_thumb(name), model.find_summary(name), model.find_link(name)
+
+@app.callback([dash.dependencies.Output('Webtoon-name-8', 'children'),
+                dash.dependencies.Output('Webtoon-img-8', 'src'),
+                dash.dependencies.Output('Webtoon-context-8', 'children'),
+                dash.dependencies.Output('Webtoon-link-8', 'href'),],
+              [dash.dependencies.Input('webtoon-memo', 'data'),
+              dash.dependencies.Input('genre-memo', 'data')])
+def webtoon_name_test(webtoon_name, genre):
+    model = Recommend(webtoon_name, genre)
+    name = model.select_iic()[3]
+    return name, model.find_thumb(name), model.find_summary(name), model.find_link(name)
+
+@app.callback([dash.dependencies.Output('Webtoon-name-9', 'children'),
+                dash.dependencies.Output('Webtoon-img-9', 'src'),
+                dash.dependencies.Output('Webtoon-context-9', 'children'),
+                dash.dependencies.Output('Webtoon-link-9', 'href'),],
+              [dash.dependencies.Input('webtoon-memo', 'data'),
+              dash.dependencies.Input('genre-memo', 'data')])
+def webtoon_name_test(webtoon_name, genre):
+    model = Recommend(webtoon_name, genre)
+    name = model.select_bert()[0]
+    return name, model.find_thumb(name), model.find_summary(name), model.find_link(name)
+
+@app.callback([dash.dependencies.Output('Webtoon-name-10', 'children'),
+                dash.dependencies.Output('Webtoon-img-10', 'src'),
+                dash.dependencies.Output('Webtoon-context-10', 'children'),
+                dash.dependencies.Output('Webtoon-link-10', 'href'),],
+              [dash.dependencies.Input('webtoon-memo', 'data'),
+              dash.dependencies.Input('genre-memo', 'data')])
+def webtoon_name_test(webtoon_name, genre):
+    model = Recommend(webtoon_name, genre)
+    name = model.select_bert()[1]
+    return name, model.find_thumb(name), model.find_summary(name), model.find_link(name)
+
+@app.callback([dash.dependencies.Output('Webtoon-name-11', 'children'),
+                dash.dependencies.Output('Webtoon-img-11', 'src'),
+                dash.dependencies.Output('Webtoon-context-11', 'children'),
+                dash.dependencies.Output('Webtoon-link-11', 'href'),],
+              [dash.dependencies.Input('webtoon-memo', 'data'),
+              dash.dependencies.Input('genre-memo', 'data')])
+def webtoon_name_test(webtoon_name, genre):
+    model = Recommend(webtoon_name, genre)
+    name = model.select_bert()[2]
+    return name, model.find_thumb(name), model.find_summary(name), model.find_link(name)
+
+@app.callback([dash.dependencies.Output('Webtoon-name-12', 'children'),
+                dash.dependencies.Output('Webtoon-img-12', 'src'),
+                dash.dependencies.Output('Webtoon-context-12', 'children'),
+                dash.dependencies.Output('Webtoon-link-12', 'href'),],
+              [dash.dependencies.Input('webtoon-memo', 'data'),
+              dash.dependencies.Input('genre-memo', 'data')])
+def webtoon_name_test(webtoon_name, genre):
+    model = Recommend(webtoon_name, genre)
+    name = model.select_bert()[3]
     return name, model.find_thumb(name), model.find_summary(name), model.find_link(name)
 
 # Update the index

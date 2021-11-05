@@ -5,6 +5,8 @@ class Recommend:
     # data : 초기 데이터
     def __init__(self, webtoon_name, webtoon_genre):
         self.data = pd.read_csv('output.csv')
+        self.iic_data = pd.read_pickle("IIC_recommend.pkl")
+        self.bert_data = pd.read_pickle("bert_recommend.pkl")
         self.input_name = webtoon_name[0]
         self.input_genre = webtoon_genre[0]
 
@@ -42,3 +44,12 @@ class Recommend:
     def find_link(self, webtoon_name):
         link = self.data['link'].loc[self.data['name']==webtoon_name].values[0]
         return link
+
+    def select_iic(self):
+        webtoon_name_df = self.iic_data.loc[(self.iic_data['title']==self.input_name)]['IIC_recommend'].values[0]
+        return webtoon_name_df
+
+    
+    def select_bert(self):
+        webtoon_name_df = self.bert_data.loc[(self.bert_data['title']==self.input_name)]['bert_recommend'].values[0]
+        return webtoon_name_df
