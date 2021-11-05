@@ -106,7 +106,7 @@ page_recommend_layout = html.Div([
     #     html.Div(id='genre-content'),
     # ),
     dbc.Row(
-        dbc.Col(html.Div('메인추천',style={'text-align':'center','background-color': '#d9ffb3'})),
+        dbc.Col(html.Div('메인 추천',style={'text-align':'center','background-color': '#d9ffb3'})),
     ),
     html.Br(),
     dbc.Row([
@@ -182,7 +182,7 @@ page_recommend_layout = html.Div([
          ]),
     html.Br(),
     dbc.Row(
-        dbc.Col(html.Div('이미지 기반 추천',style={'text-align':'center','background-color': '#d9ffb3'})),
+        dbc.Col(html.Div('그림체 취향저격',style={'text-align':'center','background-color': '#d9ffb3'})),
     ),
     html.Br(),
     dbc.Row([
@@ -257,7 +257,7 @@ page_recommend_layout = html.Div([
     ]),
     html.Br(),
     dbc.Row(
-        dbc.Col(html.Div('댓글 기반 추천',style={'text-align':'center','background-color': '#d9ffb3'})),
+        dbc.Col(html.Div('감상평 연관추천',style={'text-align':'center','background-color': '#d9ffb3'})),
     ),
     html.Br(),
     dbc.Row([
