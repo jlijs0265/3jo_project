@@ -1,3 +1,34 @@
-# 3jo_project
-    git test
-    KEY-15 test
+# webtoon_recommendation
+
+![슬라이드1](https://user-images.githubusercontent.com/86030068/156745176-6c046044-6f12-4fad-ae52-b25c5534c403.PNG)
+![슬라이드2](https://user-images.githubusercontent.com/86030068/156745238-a269e137-e2c2-44a5-9ead-d04dafaf3ea6.PNG)
+![슬라이드3](https://user-images.githubusercontent.com/86030068/156745244-e1debf5a-affd-4577-a3af-473e8d84df9a.PNG)
+![슬라이드4](https://user-images.githubusercontent.com/86030068/156745250-3a4b9e6d-cd0c-4de5-8d68-5f64e3a9f884.PNG)
+![슬라이드5](https://user-images.githubusercontent.com/86030068/156745253-e62a25a2-2b6f-4065-8e59-30a4dcf82f79.PNG)
+![슬라이드6](https://user-images.githubusercontent.com/86030068/156745255-12e554a0-9ddc-4e83-9763-e93af532dedb.PNG)
+![슬라이드7](https://user-images.githubusercontent.com/86030068/156745258-6675c712-426d-4ddb-a185-ee4125626214.PNG)
+![슬라이드8](https://user-images.githubusercontent.com/86030068/156745261-8d811d63-9946-458f-b6f3-9896d8341baa.PNG)
+![슬라이드9](https://user-images.githubusercontent.com/86030068/156745264-5b950857-442e-4e54-a036-68d1d99bae7a.PNG)
+![슬라이드10](https://user-images.githubusercontent.com/86030068/156745270-6a179cc5-0ed0-4023-b7b7-427c3f2ed3a6.PNG)
+![슬라이드11](https://user-images.githubusercontent.com/86030068/156745273-24303a24-68cc-4d53-ab44-fefaca6ac5b2.PNG)
+![슬라이드12](https://user-images.githubusercontent.com/86030068/156745274-5c9ca748-a1a0-4e0a-b109-6040c9f00869.PNG)
+![슬라이드13](https://user-images.githubusercontent.com/86030068/156745276-34f4c0a2-0077-4fc4-9071-58fc1f99b854.PNG)
+![슬라이드14](https://user-images.githubusercontent.com/86030068/156745277-a521e079-7a40-4b73-82a4-19eec45258eb.PNG)
+![슬라이드15](https://user-images.githubusercontent.com/86030068/156745279-1a2ccd61-d8b2-4959-b616-548d92090c9c.PNG)
+![슬라이드16](https://user-images.githubusercontent.com/86030068/156745280-d15e3e25-1eb2-410b-886b-68e92813c337.PNG)
+![슬라이드17](https://user-images.githubusercontent.com/86030068/156745283-ee4adbaf-bc24-448a-83c6-68152acdbe08.PNG)
+![슬라이드18](https://user-images.githubusercontent.com/86030068/156745284-e83ae561-9346-4284-b81a-ec7138bde786.PNG)
+![슬라이드19](https://user-images.githubusercontent.com/86030068/156745286-3f4d800f-91fb-4cd5-8a81-dcf1b72de50d.PNG)
+![슬라이드20](https://user-images.githubusercontent.com/86030068/156745289-19a42e6b-4433-4186-862b-cba4cf0f0500.PNG)
+![슬라이드21](https://user-images.githubusercontent.com/86030068/156745292-3884da98-71da-4109-8051-3c4a5496e751.PNG)
+![슬라이드22](https://user-images.githubusercontent.com/86030068/156745293-9a47ce4f-1cd8-45c0-8e42-3679d57ab502.PNG)
+![슬라이드23](https://user-images.githubusercontent.com/86030068/156745294-24191420-71c5-42ac-a0d3-41f34f67be48.PNG)
+![슬라이드24](https://user-images.githubusercontent.com/86030068/156745296-63abc627-79af-45e9-aed2-8f915f9ebc9c.PNG)
+![슬라이드25](https://user-images.githubusercontent.com/86030068/156745300-e921998b-b5ca-4e75-b8e5-a55ddca4dc2f.PNG)
+![슬라이드26](https://user-images.githubusercontent.com/86030068/156745303-31e4d5e1-b20f-4223-98de-cfb19474e379.PNG)
+![슬라이드27](https://user-images.githubusercontent.com/86030068/156745307-9c6f2dbb-8eff-453e-8d4d-a24a84863b38.PNG)
+![슬라이드28](https://user-images.githubusercontent.com/86030068/156745308-4d21d5c5-f187-44aa-bad6-defc6370c330.PNG)
+![슬라이드29](https://user-images.githubusercontent.com/86030068/156745311-bbf8a24e-9925-4627-b81e-9f854f9c5450.PNG)
+![슬라이드30](https://user-images.githubusercontent.com/86030068/156745313-ada521da-34f0-4194-9dcd-15a27939caf1.PNG)
+
+
